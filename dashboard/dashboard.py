@@ -20,7 +20,7 @@ sns.set_theme(style="whitegrid")
 def load_data():
     # Sesuaikan path sesuai struktur direktori submission
     # Jika main_data.csv ada di folder yang sama dengan dashboard.py
-    df = pd.read_csv("main_data.csv")
+    df = pd.read_csv("dashboard/main_data.csv")
     
     # Pastikan tipe data datetime kembali normal setelah di-load dari CSV
     datetime_cols = ['order_purchase_timestamp', 'order_approved_at', 
